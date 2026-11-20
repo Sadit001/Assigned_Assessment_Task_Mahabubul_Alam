@@ -1,4 +1,4 @@
-# 🎬 DOOMSDAY READY
+# DOOMSDAY READY
 
 > **YOUR MCU JOURNEY STARTS HERE.**
 
@@ -8,22 +8,22 @@ Built as the **Blinto Talent Accelerator 2027 — Full Stack Developer Internshi
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎥 Movie Manager
+### Movie Manager
 - Add, edit, and delete MCU movies with full metadata (title, release year, runtime)
 - Define prerequisite (dependency) relationships between movies
 - Toggle watched/unwatched status with persistent storage
 - Real-time search and filtering
 
-### 📋 Rewatch Plan
+### Rewatch Plan
 - Select any target MCU movie
 - Receive a dependency-ordered watch sequence (DFS-based topological sort)
 - Track per-movie watched status directly from the plan
 - Animated progress bar, remaining runtime calculation, and completion state
 - Circular dependency detection with clear error reporting
 
-### 🍿 Cinema Booking
+### Cinema Booking
 - Create cinemas with custom ticket bundle sizes (1–10 unique sizes, 1–500 seats each)
 - Enter your group size and get the **minimum number of bundles** needed to cover exactly
 - Uses bottom-up Dynamic Programming — mathematically optimal result guaranteed
@@ -32,7 +32,7 @@ Built as the **Blinto Talent Accelerator 2027 — Full Stack Developer Internshi
 
 ---
 
-## 🛠 Technology Stack
+## Technology Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -50,7 +50,7 @@ Built as the **Blinto Talent Accelerator 2027 — Full Stack Developer Internshi
 
 ---
 
-## 🏗 Architecture Overview
+## Architecture Overview
 
 ```
 doomsday-ready/
@@ -80,7 +80,7 @@ doomsday-ready/
 
 ---
 
-## 🗄 Data Model Diagram & Database Schema
+##  Data Model Diagram & Database Schema
 
 The application schema models two core domains: **MCU Movie Dependency Graph** and **Cinema Ticket Bundling System**.
 
@@ -147,7 +147,7 @@ erDiagram
 
 ---
 
-## ⚙️ Prerequisites
+##  Prerequisites
 
 - **Node.js** v18 or higher (v20+ recommended)
 - **npm** v9 or higher
@@ -155,7 +155,7 @@ erDiagram
 
 ---
 
-## 🐘 PostgreSQL Installation and Database Creation
+##  PostgreSQL Installation and Database Creation
 
 > Skip this section if you want to use the automatic JSON fallback (no database setup needed).
 
@@ -187,7 +187,7 @@ GRANT ALL PRIVILEGES ON DATABASE doomsday_ready TO dr_user;
 
 ---
 
-## 🔧 Environment Configuration
+##  Environment Configuration
 
 ### Backend
 ```bash
@@ -219,7 +219,7 @@ cp frontend/.env.example frontend/.env
 
 ---
 
-## 📦 Dependency Installation
+##  Dependency Installation
 
 Install all dependencies at once:
 ```bash
@@ -239,7 +239,7 @@ npm install
 
 ---
 
-## 🔄 Prisma Setup (PostgreSQL mode only)
+## Prisma Setup (PostgreSQL mode only)
 
 ### Generate Prisma client
 ```bash
@@ -265,7 +265,7 @@ npm run prisma:seed --prefix backend
 
 ---
 
-## 🚀 Starting the Application
+##  Starting the Application
 
 ### Start both frontend and backend simultaneously
 ```bash
@@ -289,7 +289,7 @@ npm run dev --prefix frontend
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ### Run all tests (Backend + Frontend)
 ```bash
@@ -318,7 +318,7 @@ Tests cover:
 
 ---
 
-## 🏭 Production Build
+##  Production Build
 
 ```bash
 # Build both
@@ -339,7 +339,7 @@ node backend/dist/server.js
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 ### Movies
 
@@ -436,7 +436,7 @@ node backend/dist/server.js
 
 ---
 
-## 🧠 Algorithm Explanations
+##  Algorithm Explanations
 
 ### Feature 1 — Rewatch Order (Graph Traversal)
 
@@ -499,7 +499,7 @@ After computing the minimum count, the algorithm **backtracks** through the DP t
 
 ---
 
-## 🔀 Dual Database Mode
+##  Dual Database Mode
 
 The backend supports **two storage modes**:
 
@@ -518,7 +518,7 @@ This design decision ensures the application is fully functional for development
 
 ---
 
-## 🎨 Design Decisions
+##  Design Decisions
 
 | Decision | Rationale |
 |----------|-----------|
@@ -532,7 +532,7 @@ This design decision ensures the application is fully functional for development
 
 ---
 
-## 🤖 AI Usage Disclosure
+##  AI Usage Disclosure
 
 This project was developed with AI assistance (Antigravity / Google DeepMind Gemini) for:
 - Code scaffolding and boilerplate generation
@@ -544,7 +544,7 @@ This project was developed with AI assistance (Antigravity / Google DeepMind Gem
 
 ---
 
-## 📋 Known Limitations
+##  Known Limitations
 
 - **Prisma migrations** require PostgreSQL to be running. Without it, the JSON fallback is used automatically.
 - **Frontend tests** are limited to component smoke tests. Full E2E testing would require a running backend.
@@ -552,4 +552,4 @@ This project was developed with AI assistance (Antigravity / Google DeepMind Gem
 
 ---
 
-*Built with ❤️ for the Blinto Talent Accelerator 2027 Assessment.*
+*Built with for the Blinto Talent Accelerator 2027 Assessment.*
